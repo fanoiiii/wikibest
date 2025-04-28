@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random (Better) Wikipedia</title>
+    <script>
+        const categories = [
+            "Science",
+            "Nature",
+            "Technology",
+            "Earth_sciences",
+            "Animals",
+            "Plants",
+            "Astronomy",
+            "Space_exploration",
+            "Engineering",
+            "Medicine",
+            "History_of_science",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Environmental_science",
+            "Geography",
+            "Natural_history",
+            "Oceanography",
+            "Wikipedia_featured_articles", // Top-tier articles from any topic
+            "Wikipedia_good_articles"     // Very solid articles across topics
+        ];
+
+        const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+        window.location.href = `https://en.wikipedia.org/wiki/Special:RandomInCategory/${randomCategory}`;
+    </script>
+</head>
+<body>
+    <p>Loading an excellent random Wikipedia article...</p>
+</body>
+</html>
