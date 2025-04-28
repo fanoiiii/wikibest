@@ -1,54 +1,37 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <title>Random (Better) Wikipedia</title>
+    <script>
+        const categories = [
+            "Science",
+            "Nature",
+            "Technology",
+            "Earth_sciences",
+            "Animals",
+            "Plants",
+            "Astronomy",
+            "Space_exploration",
+            "Engineering",
+            "Medicine",
+            "History_of_science",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Environmental_science",
+            "Geography",
+            "Natural_history",
+            "Oceanography",
+            "Wikipedia_featured_articles", // Top-tier articles from any topic
+            "Wikipedia_good_articles"     // Very solid articles across topics
+        ];
+
+        const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+        window.location.href = `https://en.wikipedia.org/wiki/Special:RandomInCategory/${randomCategory}`;
+    </script>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Random (Better) Wikipedia&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const categories = [</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Science",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Nature",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Technology",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Earth_sciences",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Animals",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Plants",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Astronomy",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Space_exploration",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Engineering",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Medicine",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"History_of_science",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Physics",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Chemistry",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Biology",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Environmental_science",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Geography",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Natural_history",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Oceanography",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Wikipedia_featured_articles", // Top-tier articles from any topic</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Wikipedia_good_articles" <span class="Apple-converted-space">    </span>// Very solid articles across topics</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const randomCategory = categories[Math.floor(Math.random() * categories.length)];</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.location.href = `https://en.wikipedia.org/wiki/Special:RandomInCategory/${randomCategory}`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Loading an excellent random Wikipedia article...&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+    <p>Loading an excellent random Wikipedia article...</p>
 </body>
 </html>
